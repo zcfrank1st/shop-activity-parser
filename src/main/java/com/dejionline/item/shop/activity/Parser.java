@@ -1,6 +1,6 @@
 package com.dejionline.item.shop.activity;
 
-import com.dejionline.item.shop.activity.excutor.Excutor;
+import com.dejionline.item.shop.activity.executor.Executor;
 import com.dejionline.item.shop.activity.gen.ShopActivityLexer;
 import com.dejionline.item.shop.activity.gen.ShopActivityParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -24,7 +24,7 @@ public class Parser {
 //
 //        walker.walk(new ActivityProcessor(), tree);
 
-        Excutor vistor = new Excutor();
+        Executor vistor = new Executor();
         vistor.visit(tree);
     }
 }

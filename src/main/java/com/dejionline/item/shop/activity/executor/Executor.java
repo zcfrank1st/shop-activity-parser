@@ -1,17 +1,12 @@
-package com.dejionline.item.shop.activity.excutor;
+package com.dejionline.item.shop.activity.executor;
 
 import com.dejionline.item.shop.activity.gen.ShopActivityBaseVisitor;
 import com.dejionline.item.shop.activity.gen.ShopActivityParser;
 
 /**
- * Created by zcfrank1st on 1/7/16.
+ * Created by zcfrank1st on 1/8/16.
  */
-public class Excutor extends ShopActivityBaseVisitor{
-    @Override
-    public Object visitName(ShopActivityParser.NameContext ctx) {
-        return super.visitName(ctx);
-    }
-
+public class Executor extends ShopActivityBaseVisitor {
     @Override
     public Object visitProg(ShopActivityParser.ProgContext ctx) {
         return super.visitProg(ctx);
@@ -20,6 +15,11 @@ public class Excutor extends ShopActivityBaseVisitor{
     @Override
     public Object visitStm(ShopActivityParser.StmContext ctx) {
         return super.visitStm(ctx);
+    }
+
+    @Override
+    public Object visitName(ShopActivityParser.NameContext ctx) {
+        return super.visitName(ctx);
     }
 
     @Override
